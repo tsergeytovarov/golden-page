@@ -101,22 +101,22 @@ module.exports = function(grunt){
     }
   });
 
-  // proj.registerTask("default",
-  //   [
-  //     "clean",
-  //     "copy",
-  //     "less",
-  //     "autoprefixer",
-  //     "csscomb",
-  //     "cssmin",
-  //     "uglify",
-  //     "imagemin"
-  //   ]
-  // );
-
   grunt.registerTask("default",
     [
-      "watch"
+      "clean",
+      "copy",
+      "less",
+      "autoprefixer",
+      "csscomb",
+      "cssmin",
+      "uglify",
+      "imagemin"
     ]
   );
+
+  // grunt.registerTask("default",
+  //   [
+  //     "watch"
+  //   ]
+  // );
 }
