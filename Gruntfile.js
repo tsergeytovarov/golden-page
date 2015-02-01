@@ -89,18 +89,34 @@ module.exports = function(grunt){
         }]
       }
     },
+
+    watch: {
+      less: {
+        files: ['**/*.less','**/*.css'],
+        tasks: ['less', 'clean', 'copy'],
+        options: {
+          spawn: false,
+        },
+      },
+    }
   });
+
+  // grunt.registerTask("default",
+  //   [
+  //     "clean",
+  //     "copy",
+  //     "less",
+  //     "autoprefixer",
+  //     "csscomb",
+  //     "cssmin",
+  //     "uglify",
+  //     "imagemin"
+  //   ]
+  // );
 
   grunt.registerTask("default",
     [
-      "clean",
-      "copy",
-      "less",
-      "autoprefixer",
-      "csscomb",
-      "cssmin",
-      "uglify",
-      "imagemin"
+      "watch"
     ]
   );
 }
