@@ -92,8 +92,8 @@ module.exports = function(grunt){
 
     watch: {
       less: {
-        files: ['**/*.less','**/*.css'],
-        tasks: ['less', 'clean', 'copy'],
+        files: ['**/*.less','*.html'],
+        tasks: ['clean', 'copy', 'less' ],
         options: {
           spawn: false,
         },
@@ -101,7 +101,7 @@ module.exports = function(grunt){
     }
   });
 
-  // grunt.registerTask("default",
+  // proj.registerTask("default",
   //   [
   //     "clean",
   //     "copy",

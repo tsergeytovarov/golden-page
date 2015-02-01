@@ -4,4 +4,60 @@
 	min-height: 700px;
 	background: url("../img/background-header.jpg") no-repeat top center; /* todo затемнить*/
 	background-size: cover;
+
+  text-align: center;
+
+  h1{
+    text-align: center;
+    color: @white;
+    margin-top: 40px;
+  }
+
+  .btn{
+    margin-top: 50px;
+  }
+}
+
+.header-top{
+  padding-top: 45px;
+}
+
+.logo{
+  float: left;
+  widt: 80px;
+
+  img{
+    width: 80px;
+  }
+}
+
+.main-navigation{
+  float: right;
+  width: 485px;
+  font-size: 0;
+
+  a{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    .base-font;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 45px;
+    text-decoration: none;
+    color: @white;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.welcome-text{
+  margin-top: 200px;
+  text-align: center;
+  color: @white;
+  font-size: 40px;
+  line-height: 45px;
+  .italic-font;
 }
