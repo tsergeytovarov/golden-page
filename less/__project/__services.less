@@ -1,0 +1,48 @@
+
+.services{
+
+}
+
+.services-item{
+  text-align: center;
+
+  &_title{
+    padding-top: 95px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:before{
+      display: block;
+      content: "";
+      width: 72px;
+      height: 72px;
+      border-radius: 100%;
+      border: 3px solid @yellow;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -36px;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.ecommerce{
+  &:before{
+    background-image: url("../img/context/ico-1.png");
+  }
+}
+
+.responsive{
+  &:before{
+    background-image: url("../img/context/ico-2.png");
+  }
+}
+
+.security{
+  &:before{
+    background-image: url("../img/context/ico-3.png");
+  }
+}
