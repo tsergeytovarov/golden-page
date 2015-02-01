@@ -2,33 +2,42 @@
   Базовая типография
 =====================*/
 
-@font-face {
-  font-family: 'Gotham';
-  src:  url('../font/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/GothamPro-Medium.otf') format('opentype'),
-        url('../font/GothamPro-Medium.woff') format('woff'),
-        url('../font/GothamPro-Medium.ttf') format('truetype'),
-        url('../font/GothamPro-Medium.svg#font/GothamPro-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
+.base-font{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.italic-font{
+  font-family: 'Droid Serif', serif
+  font-weight: 400;
+}
+
+.text-font{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 body{
-  font-family: 'Gotham', sans-serif;
+  .text-font;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 h1{
-
+  .base-font;
+  font-size: 75px;
 }
 
 h2{
-
+  .base-font;
+  font-size: 40px;
+  line-height: 75px;
 }
 
 h3{
-
+  .base-font;
+  font-size: 18px;
+  line-height: 75px;
 }
 
 h4{
