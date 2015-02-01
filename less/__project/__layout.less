@@ -13,7 +13,8 @@
 
 .services,
 .gray-section,
-.team{
+.team,
+.contact-section{
   padding: 120px 0;
 }
 
@@ -32,4 +33,22 @@ h2{
 .gray-section{
   background-color: @gray__lt;
   min-width: @content;
+}
+
+.contact-section{
+  min-width: @content;
+  background-color: #222;
+  background-image: url("../img/background-map.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: bottom right;
+
+  h2{
+    color: @white;
+  }
+
+  .btn{
+    display: block;
+    margin: 0 auto;
+  }
 }

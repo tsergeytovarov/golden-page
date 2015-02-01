@@ -3,17 +3,21 @@
 =====================*/
 input[type='text'],
 textarea,
-select,
-input[type='password']{ /* поля */
+input[type='email']{ /* поля */
   box-sizing: border-box;
   outline: none;
   width: 100%;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
-  font-family: 'Gotham', sans-serif;
+  padding: 15px 20px;
+  .base-font;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 25px;
 
   &:focus{
-
+    border: 1px solid @yellow;
   }
 }
 
@@ -24,6 +28,11 @@ label{
 button{
   cursor: pointer;
   outline: none;
+}
+
+textarea{
+  height: 207px;
+  resize: none;
 }
 
 input::-webkit-input-placeholder{

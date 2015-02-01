@@ -397,6 +397,7 @@ b {
   border-radius: 3px;
   font-weight: 400;
   color: #ffffff;
+  border: none;
 }
 .btn:hover,
 .btn--hover {
@@ -423,15 +424,25 @@ b {
 =====================*/
 input[type='text'],
 textarea,
-select,
-input[type='password'] {
+input[type='email'] {
   /* поля */
   box-sizing: border-box;
   outline: none;
   width: 100%;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
-  font-family: 'Gotham', sans-serif;
+  padding: 15px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 25px;
+}
+input[type='text']:focus,
+textarea:focus,
+input[type='email']:focus {
+  border: 1px solid #fed136;
 }
 label {
   cursor: pointer;
@@ -439,6 +450,10 @@ label {
 button {
   cursor: pointer;
   outline: none;
+}
+textarea {
+  height: 207px;
+  resize: none;
 }
 /*=====================
   Кастомные формы и радио кнопки
@@ -484,7 +499,8 @@ input[type="radio"]:checked + label::before {
 }
 .services,
 .gray-section,
-.team {
+.team,
+.contact-section {
   padding: 120px 0;
 }
 h2 {
@@ -503,13 +519,27 @@ h2 {
   background-color: #f7f7f7;
   min-width: 960px;
 }
+.contact-section {
+  min-width: 960px;
+  background-color: #222;
+  background-image: url("../img/background-map.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: bottom right;
+}
+.contact-section h2 {
+  color: #ffffff;
+}
+.contact-section .btn {
+  display: block;
+  margin: 0 auto;
+}
 /* контролирующие классы */
 /* header */
 .main-page-header {
   min-width: 960px;
   min-height: 700px;
-  background: url("../img/background-header.jpg") no-repeat top center;
-  /* todo затемнить*/
+  background: url("../img/background-header.jpg") no-repeat bottom center;
   background-size: cover;
   text-align: center;
 }
@@ -706,6 +736,122 @@ h2 {
 }
 .timeline-item__offset .timeline-item_text {
   text-align: left;
+}
+.team-section_text {
+  text-align: center;
+  width: 620px;
+  margin: 40px auto 0;
+}
+.team-item {
+  text-align: center;
+}
+.team-item_image {
+  width: 288px;
+  height: 288px;
+  box-sizing: border-box;
+  border: 7px solid #ffffff;
+  border-radius: 100%;
+  background: #000;
+  overflow: hidden;
+}
+.team-item_image img {
+  width: 100%;
+  height: 100%;
+}
+.team-item_name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #222;
+}
+.team-item_work {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  color: #777;
+}
+.social-button {
+  font-size: 0;
+}
+.social-button_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid #222;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 5px;
+}
+.social-button_item:hover {
+  opacity: .8;
+}
+.social-button .twitter {
+  background-image: url("../img/context/ico-tw.png");
+}
+.social-button .facebook {
+  background-image: url("../img/context/ico-fb.png");
+  background-size: 25%;
+}
+.social-button .pinterest {
+  background-image: url("../img/context/ico-pint.png");
+}
+.social-button__dark .social-button_item {
+  background: #222;
+}
+.social-button__dark .twitter {
+  background-image: url("../img/context/ico-tw__white.png");
+  background-size: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-button__dark .facebook {
+  background-image: url("../img/context/ico-fb__white.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-button__dark .pinterest {
+  background-image: url("../img/context/ico-pint__white.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-button__dark .google {
+  background-image: url("../img/context/ico-ggl__white.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product {
+  padding: 60px 0;
+  text-align: center;
+}
+.product_item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 25px;
+}
+.product_item img {
+  width: 150px;
+}
+.product_item:hover {
+  opacity: .6;
+}
+.main-page-footer {
+  padding: 20px 0;
+}
+.main-page-footer_text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  color: #555;
 }
 /* подвал */
 /* Косметический слой */
